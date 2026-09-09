@@ -1,0 +1,2 @@
+-- Optional seed reference (runtime seeding is done in FastAPI startup)
+-- Demo caregiver: caregiver@demo.example.com / Caregiver123!

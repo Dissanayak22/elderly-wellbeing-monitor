@@ -1,0 +1,17 @@
+{
+  "name": "elderly-wellbeing-monitor-workspace",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "start": "powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File START_ALL.ps1",
+    "dev": "powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File START_ALL.ps1",
+    "stop": "powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File STOP_SERVICES.ps1",
+    "status": "powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File CHECK_STATUS.ps1",
+    "status:deep": "powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File CHECK_STATUS.ps1 -Deep",
+    "model:check": "powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File CHECK_AI_MODEL.ps1",
+    "model:download": "powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File CHECK_AI_MODEL.ps1 -AllowDownload",
+    "frontend:dev": "npm --prefix frontend run dev -- --host 127.0.0.1 --port 5173 --strictPort",
+    "build": "npm --prefix frontend run build",
+    "test": "npm --prefix frontend test"
+  }
+}

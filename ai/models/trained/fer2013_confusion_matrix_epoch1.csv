@@ -1,0 +1,8 @@
+label,sad,disgust,angry,neutral,fear,surprise,happy
+sad,548,155,71,333,77,19,44
+disgust,5,94,3,4,1,3,1
+angry,182,189,288,152,60,54,33
+neutral,246,62,32,773,45,22,53
+fear,277,137,76,182,165,163,24
+surprise,33,22,26,61,54,617,18
+happy,119,74,59,217,49,69,1187

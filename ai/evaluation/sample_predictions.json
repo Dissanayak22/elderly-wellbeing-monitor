@@ -1,0 +1,12 @@
+[
+  {"true": "happy", "pred": "happy"},
+  {"true": "happy", "pred": "happy"},
+  {"true": "sad", "pred": "sad"},
+  {"true": "sad", "pred": "neutral"},
+  {"true": "angry", "pred": "angry"},
+  {"true": "fear", "pred": "surprise"},
+  {"true": "surprise", "pred": "surprise"},
+  {"true": "disgust", "pred": "angry"},
+  {"true": "neutral", "pred": "neutral"},
+  {"true": "neutral", "pred": "happy"}
+]

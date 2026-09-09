@@ -1,0 +1,131 @@
+{
+  "checkpoint": "D:\\elderly-wellbeing-monitor\\ai\\models\\trained\\fer2013_mobilenetv3_small_weighted_epoch1_cpu.pt",
+  "dataset_root": "D:\\elderly-wellbeing-monitor\\ai\\datasets\\fer2013",
+  "test_sample_count": 7178,
+  "accuracy": 0.45792699916411256,
+  "macro_precision": 0.4207214698178405,
+  "macro_recall": 0.49534366405995817,
+  "macro_f1": 0.40464497491780954,
+  "weighted_precision": 0.491083017215697,
+  "weighted_recall": 0.45792699916411256,
+  "weighted_f1": 0.45555663818254477,
+  "per_class": {
+    "sad": {
+      "precision": 0.3985200845665962,
+      "recall": 0.3023255813953488,
+      "f1": 0.3438212494300045,
+      "support": 1247
+    },
+    "disgust": {
+      "precision": 0.1076923076923077,
+      "recall": 0.8198198198198198,
+      "f1": 0.19037656903765693,
+      "support": 111
+    },
+    "angry": {
+      "precision": 0.32060301507537686,
+      "recall": 0.33298538622129437,
+      "f1": 0.32667690732206855,
+      "support": 958
+    },
+    "neutral": {
+      "precision": 0.4309993201903467,
+      "recall": 0.5141930251419302,
+      "f1": 0.46893491124260356,
+      "support": 1233
+    },
+    "fear": {
+      "precision": 0.37748344370860926,
+      "recall": 0.111328125,
+      "f1": 0.17194570135746606,
+      "support": 1024
+    },
+    "surprise": {
+      "precision": 0.5647058823529412,
+      "recall": 0.7509025270758123,
+      "f1": 0.6446280991735537,
+      "support": 831
+    },
+    "happy": {
+      "precision": 0.7450462351387054,
+      "recall": 0.6358511837655016,
+      "f1": 0.6861313868613139,
+      "support": 1774
+    }
+  },
+  "confusion_matrix": [
+    [
+      377,
+      186,
+      181,
+      294,
+      59,
+      39,
+      111
+    ],
+    [
+      4,
+      91,
+      3,
+      3,
+      3,
+      3,
+      4
+    ],
+    [
+      97,
+      229,
+      319,
+      150,
+      34,
+      76,
+      53
+    ],
+    [
+      153,
+      88,
+      130,
+      634,
+      39,
+      74,
+      115
+    ],
+    [
+      190,
+      126,
+      151,
+      162,
+      114,
+      211,
+      70
+    ],
+    [
+      24,
+      20,
+      47,
+      56,
+      27,
+      624,
+      33
+    ],
+    [
+      101,
+      105,
+      164,
+      172,
+      26,
+      78,
+      1128
+    ]
+  ],
+  "labels": [
+    "sad",
+    "disgust",
+    "angry",
+    "neutral",
+    "fear",
+    "surprise",
+    "happy"
+  ],
+  "evaluation_time_seconds": 284.935785099995
+}

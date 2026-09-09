@@ -1,0 +1,99 @@
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  padding: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: center;
+}
+
+.login-hero h1 {
+  font-family: var(--display);
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  margin: 0.4rem 0 1rem;
+  max-width: 12ch;
+  line-height: 1.05;
+}
+
+.login-hero p {
+  max-width: 38rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.login-card {
+  padding: 1.6rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.auth-tabs {
+  display: flex;
+  background: #e4efed;
+  border-radius: 8px;
+  padding: 4px;
+  gap: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.tab-btn {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--muted, #888);
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+  color: var(--teal-deep);
+}
+
+.tab-btn.active {
+  background: white;
+  color: var(--teal-deep);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.login-card h2 {
+  margin: 0 0 0.4rem;
+}
+
+.form-row select {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: white;
+  color: var(--ink);
+}
+
+.error {
+  color: var(--alert, #ff4d4f);
+  margin: 0;
+}
+
+.hint {
+  color: var(--muted, #888);
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+.toggle-link {
+  display: inline-block;
+  margin-top: 0.4rem;
+  color: var(--primary, #4f46e5);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 860px) {
+  .login-page {
+    grid-template-columns: 1fr;
+  }
+}

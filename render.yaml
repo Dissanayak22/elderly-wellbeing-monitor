@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: elderly-wellbeing-monitor-backend
+    runtime: python
+    plan: free
+    buildCommand: "pip install -r backend/requirements.txt"
+    startCommand: "python -m uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: SECRET_KEY
+        generateValue: true
+      - key: FRONTEND_ORIGINS
+        value: https://your-app.vercel.app,http://127.0.0.1:5173,http://localhost:5173
+      - key: AI_DEMO_MODE
+        value: "false"
+      - key: PYTHONPATH
+        value: .
