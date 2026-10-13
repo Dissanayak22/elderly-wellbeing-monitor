@@ -11,8 +11,12 @@ services:
       - key: SECRET_KEY
         generateValue: true
       - key: FRONTEND_ORIGINS
-        value: https://your-app.vercel.app,http://127.0.0.1:5173,http://localhost:5173
+        value: https://elderly-wellbeing-monitor.vercel.app,http://127.0.0.1:5173,http://localhost:5173
+      - key: DATABASE_URL
+        sync: false
       - key: AI_DEMO_MODE
+        value: "false"
+      - key: SEED_DEMO_DATA
         value: "false"
       - key: PYTHONPATH
         value: .

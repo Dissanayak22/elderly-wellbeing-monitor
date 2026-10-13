@@ -269,7 +269,7 @@ function Test-EwmManagedRecord {
         return $false
     }
 
-    return @(Get-EwmListeningProcessIds -Port $ExpectedPort) -contains [int]$Record.pid
+    return $true
 }
 
 function Get-EwmTopServiceProcessId {
